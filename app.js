@@ -43,14 +43,14 @@ let getMovie = () => {
           <p>${data.Actors}</p>
           `;
         } else if ((data.Responce = "False")) {
-          result.innerHTML = `<h3 class="msg">${data.Error}testtesttest</h3>`;
+          result.innerHTML = `<h3 class="msg">${data.Error}</h3>`;
 
         } else {
           result.innerHTML = `<h3 class="msg">${data.Error}</h3>`;
         }
       })
       .catch(() => {
-        result.innerHTML = `<h3 class="msg">Error Occured</h3>`;
+        result.innerHTML = `<h3 class="msg">Error Occured (Possible Movie not Found)</h3>`;
       });
   }
 };
