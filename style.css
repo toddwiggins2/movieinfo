@@ -156,4 +156,7 @@ p {
   .info {
     grid-template-columns: 1fr;
   }
+  .search-container {
+    grid-template-columns: 6fr 3fr;;
+  }
 }
