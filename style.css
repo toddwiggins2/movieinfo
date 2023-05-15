@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #22223b, #8c7d89);
+}
+
+.container {
+  font-size: 16px;
+  width: 90vw;
+  max-width: 37.5rem;
+  padding: 3em 1.8em;
+  background-color: #4a4e69;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+  border: 1px solid #f2e9e4;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.2em;
+}
+
+.search-container input,
+.search-container button {
+  font-size: 1em;
+  outline: none;
+  border-radius: 8px;
+}
+
+.search-container input {
+  background-color: transparent;
+  border: 1px solid #f2e9e4;
+  color: #f2e9e4;
+  padding: 0.7em;
+}
+
+.search-container input:focus {
+  border-color: #f2e9e4;
+}
+
+.search-container button {
+  background-color: #22223b;
+  border: none;
+  cursor: pointer;
+  color: #f2e9e4;
+}
+
+#result {
+  color: #f2e9e4;
+}
+
+.info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  margin-top: 1.2em;
+}
+
+.poster {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 0.6em 0;
+}
+
+.rating img {
+  width: 1.2em;
+}
+
+.rating h4 {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  font-size: 0.95em;
+  gap: 1em;
+  justify-content: center;
+  color: #f2e9e4;
+  margin: 0.6em 0;
+  font-weight: 300;
+}
+
+.genre {
+  display: flex;
+  justify-content: space-around;
+}
+
+.genre div {
+  border: 1px solid #f2e9e4;
+  font-size: 0.75rem;
+  padding: 0.4em 1.6em;
+  border-radius: 8px;
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 500;
+  width: auto;
+}
+
+p {
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+  color: #f2e9e4;
+}
+
+.msg {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 14px;
+  }
+  .poster {
+    margin: auto;
+    width: auto;
+    max-height: 10.8em;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
